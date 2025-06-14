@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hello, You</title>
   <style>
     body {
@@ -14,29 +14,47 @@
 
     h1 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 2rem;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .card {
+    .brick {
+      display: flex;
+      flex-direction: row;
       background-color: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-      cursor: pointer;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
       transition: transform 0.2s;
       text-decoration: none;
-      color: #333;
+      color: inherit;
+      min-height: 180px;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .brick:hover {
+      transform: scale(1.02);
+    }
+
+    .brick-text {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .brick-img {
+      width: 50%;
+      object-fit: cover;
+      height: 100%;
     }
 
     .nav-link {
@@ -47,16 +65,84 @@
       color: #0077cc;
       font-weight: bold;
     }
+
+    @media (max-width: 768px) {
+      .brick {
+        flex-direction: column;
+      }
+
+      .brick-img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .brick-text {
+        padding: 1rem;
+        font-size: 1.1rem;
+        justify-content: center;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Hello, You</h1>
 
   <div class="grid">
-    <a class="card" href="blog1.html">How I Fell in Love with Mornings</a>
-    <a class="card" href="blog2.html">That Time I Got Lost (and Found Something Better)</a>
-    <a class="card" href="blog3.html">Why Overthinking is My Superpower</a>
-    <!-- Add more cards here -->
+    <a class="brick" href="blog1.html">
+      <div class="brick-text">We are the people we hate</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=1" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog2.html">
+      <div class="brick-text">Where are the grownups</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=2" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog3.html">
+      <div class="brick-text">Everyone is Privileged</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=3" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog4.html">
+      <div class="brick-text">Lukewarm is no good</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=4" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog5.html">
+      <div class="brick-text">At least I know</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=5" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog6.html">
+      <div class="brick-text">Fundamental agonies of Life</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=6" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog7.html">
+      <div class="brick-text">All Right, All Wrong</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=7" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog8.html">
+      <div class="brick-text">What should I think</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=8" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog9.html">
+      <div class="brick-text">Dangers and Payoffs of an Artistic Ambition</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=9" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog10.html">
+      <div class="brick-text">Comparison as a Compass</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=10" alt="Post image">
+    </a>
+
+    <a class="brick" href="blog11.html">
+      <div class="brick-text">Moving Targets</div>
+      <img class="brick-img" src="https://picsum.photos/400/300?random=11" alt="Post image">
+    </a>
   </div>
 
   <a class="nav-link" href="titles.html">See All Blog Titles →</a>
