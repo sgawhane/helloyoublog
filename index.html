@@ -4,20 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello, You — Blog</title>
+
+  <!-- Import Brittany font -->
   <style>
+    @font-face {
+      font-family: 'Brittany';
+      src: url('fonts/Brittany.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: #f9f9f9;
+      font-family: 'Brittany', cursive;
+      background: linear-gradient(135deg, #fdf6f0, #fceae0);
+      min-height: 100vh;
       color: #222;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem;
-      font-size: 3rem;
-      font-weight: bold;
+      padding: 4rem 1rem;
+      font-size: 4rem;
+      font-weight: normal;
       letter-spacing: 1px;
+      color: #3b2f2f;
     }
 
     .container {
@@ -30,12 +41,12 @@
     }
 
     .brick {
-      background: #fff;
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      cursor: pointer;
       text-decoration: none;
       color: inherit;
       display: flex;
@@ -44,32 +55,45 @@
     }
 
     .brick:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
     .brick h2 {
       margin-top: 0;
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
+      font-family: Georgia, serif;
     }
 
     .brick p {
       margin: 0;
       font-size: 1rem;
       opacity: 0.7;
+      font-family: Georgia, serif;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+      font-size: 1rem;
+      color: #555;
       padding: 2rem;
+      font-family: Georgia, serif;
+    }
+
+    footer a {
+      color: #3b2f2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
       header {
-        font-size: 2.2rem;
+        font-size: 3rem;
       }
     }
   </style>
@@ -79,18 +103,15 @@
 
   <div class="container">
     <a href="posts/post1.html" class="brick">
-      <h2>How I Fell in Love with Boredom</h2>
-      <p>A story about slowing down and letting my thoughts wander.</p>
+      <h2>What makes a problem feel too big</h2>
     </a>
 
     <a href="posts/post2.html" class="brick">
-      <h2>The Empathy Trap</h2>
-      <p>When caring too much starts to cost you.</p>
+      <h2>The Rhythm of Randomness</h2>
     </a>
 
     <a href="posts/post3.html" class="brick">
-      <h2>Becoming Who You Need to Be</h2>
-      <p>How crisis transforms us — if we let it.</p>
+      <h2>Where are the Grownups</h2>
     </a>
   </div>
 
