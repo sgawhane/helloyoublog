@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>All Blog Titles</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Posts — Hello, You</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fafafa;
+      color: #222;
       padding: 2rem;
-      color: #333;
     }
 
-    h1 {
+    header {
       text-align: center;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
 
-    ul {
-      max-width: 600px;
+    .post-list {
+      max-width: 700px;
       margin: 0 auto;
-      padding: 0;
-      list-style: none;
     }
 
-    li {
-      padding: 1rem;
-      border-bottom: 1px solid #ccc;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0077cc;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back-link {
+    .post-list a {
       display: block;
+      font-size: 1.3rem;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .post-list a:hover {
+      background: #f0f0f0;
+      transform: translateX(4px);
+    }
+
+    footer {
       text-align: center;
-      margin-top: 2rem;
-      color: #666;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>All Blog Titles</h1>
-  <ul>
-    <li><a href="blog3.html">What makes a problem feel "too big"?</a>
-    <li><a href="blog2.html">We are the people we hate</a></li>
-    <li><a href="blog3.html">Where are the grownups</a></li>
-    <li><a href="blog3.html">Everyone is Privileged</a></li>
-    <li><a href="blog3.html">Lukewarm is no good</a></li>
-    <li><a href="blog3.html">At least I know</a></li>
-    <li><a href="blog3.html">Fundamental agonies of Life</a>
-    
-  </ul>
-  <a class="back-link" href="index.html">←Homepage</a>
+  <header>All Posts</header>
+
+  <div class="post-list">
+    <a href="posts/post1.html">How I Fell in Love with Boredom</a>
+    <a href="posts/post2.html">The Empathy Trap</a>
+    <a href="posts/post3.html">Becoming Who You Need to Be</a>
+  </div>
+
+  <footer>
+    <a href="index.html">← Back to Home</a>
+  </footer>
 </body>
 </html>
