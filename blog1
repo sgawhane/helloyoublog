@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What makes a problem feel “too big”?</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.7;
+      background: #fffdfb;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: #444;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>What makes a problem feel “too big”?</h1>
+
+  <p>
+    In a large office, at a small desk a 27 year-old engineer stares at her unread Slacks, contemplating the state of the world. The 37 tabs open in her browser, each offering a different facet of doom: climate change, inflation, housing crisis, AI, loneliness. “It just feels too big,” she says, almost apologetically, as if admitting to psychological defeat.
+
+The phrase “too big” is not clinical. It’s not found in the DSM-5. But it lives at the intersection of psychology, sociology, and culture — shorthand for that peculiar sensation of mental paralysis that occurs when the magnitude of a problem surpasses the perceived power of the individual. Whether it’s systemic racism or a broken dishwasher, the feeling stems not just from what we face, but how we process its scope.
+
+The Cognitive Collapse
+Dr. Leigh Morgan, a cognitive psychologist at NYU, explains it with an elegant phrase: cognitive overload meets helplessness schema. “Humans are built to handle complexity, but only in bounded doses,” she says. Our working memory — often likened to the RAM of a computer — can juggle about four to seven variables at once. After that, the system begins to sputter.
+
+It’s not just quantity. It’s uncertainty. “When a problem lacks clear causality or fixability,” Dr. Morgan notes, “we default to overwhelm.” The brain’s prefrontal cortex, the executive decision-maker, goes offline. In its place, the amygdala — the brain’s fear center — lights up. The result: rumination.
+
+Big Feels in an Individualistic Culture
+Modern society, with its bootstrap mythology and celebration of individual agency, predisposes us to internalize large problems as personal failures. If you can’t fix climate change, a toxic workplace, or capitalism itself, perhaps you are not trying hard enough.
+
+“We lack the cultural grammar to say, ‘This is bigger than me, and that’s okay,’” says journalist and author Mia Ransome, who writes about emotional labor in activist spaces. “Instead, we either spiral or perform.” Performance, in this case, might mean organizing a protest and a panel and a podcast — all while burning out privately. Ransome calls it “existential inflation”: every problem balloons into a referendum on your ethics, your intellect, your very worth. To opt out, even briefly, feels like moral failure.
+
+Scaling Down
+Ironically, the way out of “too big” often lies in making it smaller. Neuroscience supports the practice of chunking — breaking complex problems into discrete, manageable actions. The brain responds better to clarity than scale.
+
+Consider the difference between these two to-do list items:
+
+“Fix the broken education system”
+“Email school principal about after-school program”
+The latter activates the dorsolateral prefrontal cortex, associated with planning and motivation. The former, while noble, may only activate your inner monologue of despair. Dr. Morgan likens it to GPS: “Your brain needs a starting point and the next turn, not a bird’s eye view of the entire continent.”
+
+Why Now?
+This psychological phenomenon is hardly new. But it’s more acute in an age where we are chronically exposed to all problems, all the time. Thanks to the internet, one can simultaneously witness the fires in Greece, the healthcare collapse in rural America, and a stranger’s breakup in Seoul. “This is the paradox of hyper-awareness,” says Dr. Asha Nair, a social psychologist at Columbia. “We’re globally conscious but locally frozen. We feel everything, fix nothing.”
+
+And so we label it “too big.” A gentle euphemism. A white flag. To reframe scale is a collective task. To understand that acknowledging the size of something isn’t the same as succumbing to it.
+
+In the meantime, the 27 year old takes a few long, deep breaths. Her heart rate slows. She calms the mental static and chooses answer one message. It is not everything. But it is not nothing.
+  </p>
+
+  <a class="back" href="index.html">← Back to Homepage</a>
+</body>
+</html>
