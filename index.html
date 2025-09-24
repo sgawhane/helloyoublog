@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Posts — Hello, You</title>
+  <title>Hello, You — Blog</title>
+
+  <!-- Load Brittany font -->
   <style>
     @font-face {
       font-family: 'Brittany';
@@ -16,47 +18,64 @@
       margin: 0;
       font-family: 'Brittany', cursive;
       background: linear-gradient(135deg, #fdf6f0, #fceae0);
+      min-height: 100vh;
       color: #222;
-      padding: 2rem;
     }
 
     header {
       text-align: center;
-      font-size: 3rem;
-      margin-bottom: 2rem;
+      padding: 4rem 1rem;
+      font-size: 4rem;
+      font-weight: normal;
       color: #3b2f2f;
     }
 
-    .post-list {
-      max-width: 700px;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 2rem;
     }
 
-    .post-list a {
-      display: block;
-      font-family: Georgia, serif;
-      font-size: 1.4rem;
-      padding: 1rem 1.2rem;
-      margin-bottom: 0.7rem;
-      text-decoration: none;
-      color: #333;
+    .brick {
       background: #ffffffcc;
       backdrop-filter: blur(8px);
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      transition: background 0.2s ease, transform 0.2s ease;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .post-list a:hover {
-      background: #f0f0f0;
-      transform: translateX(4px);
+    .brick:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .brick h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      font-family: Georgia, serif;
+    }
+
+    .brick p {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.7;
+      font-family: Georgia, serif;
     }
 
     footer {
       text-align: center;
-      margin-top: 3rem;
       font-size: 1rem;
       color: #555;
+      padding: 2rem;
       font-family: Georgia, serif;
     }
 
@@ -66,28 +85,33 @@
       font-weight: bold;
     }
 
-  <div class="post-list">
-    <a href="posts/tell-me-what-to-do.html">Tell me what to do, don’t tell me what to do</a>
-    <a href="posts/fundamental-agonies.html">Fundamental Agonies of Life</a>
-    <a href="posts/too-big.html">What makes a problem feel “too big”?</a>
-    <a href="posts/rhythm-of-randomness.html">The rhythm of randomness</a>
-    <a href="posts/moving-targets.html">Moving targets</a>
-    <a href="posts/where-are-the-grownups.html">Where are the grownups?</a>
-    <a href="posts/artistic-ambition.html">Dangers and payoffs of an artistic ambition</a>
-    <a href="posts/lukewarm.html">Lukewarm is no good</a>
-    <a href="posts/absence-of-curiosity.html">An absence of curiosity, in the presence of fear</a>
-    <a href="posts/all-right-all-wrong.html">All right, all wrong</a>
-    <a href="posts/temptation-of-stillness.html">The temptation of stillness</a>
-    <a href="posts/magic-of-now.html">The magic of now</a>
-    <a href="posts/frameworks.html">Frameworks</a>
-    <a href="posts/productive-illusions.html">Productive illusions</a>
-    <a href="posts/expiry-of-amends.html">The expiry date of amends</a>
-    <a href="posts/at-least-i-know.html">At least I know (Micro-narcissism)</a>
-    <a href="posts/we-are-the-people-we-hate.html">We are the people we hate</a>
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>Hello, You</header>
+
+  <div class="container">
+    <a href="posts/tell-me-what-to-do.html" class="brick">
+      <h2>Tell me what to do, don’t tell me what to do</h2>
+      <p>A reflection on indecision and authority.</p>
+    </a>
+
+    <a href="posts/fundamental-agonies.html" class="brick">
+      <h2>Fundamental Agonies of Life</h2>
+      <p>Why we struggle with the things that never go away.</p>
+    </a>
+
+    <a href="posts/too-big.html" class="brick">
+      <h2>What makes a problem feel “too big”?</h2>
+      <p>It’s not the size — it’s how it touches our story.</p>
+    </a>
   </div>
 
   <footer>
-    <a href="index.html">← Back to Home</a>
+    <a href="posts.html">See All Posts</a> • © 2025 Your Name
   </footer>
 </body>
 </html>
