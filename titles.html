@@ -4,19 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All Posts — Hello, You</title>
+
   <style>
+    @font-face {
+      font-family: 'Brittany';
+      src: url('fonts/Brittany.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: #fafafa;
+      font-family: 'Brittany', cursive;
+      background: linear-gradient(135deg, #fdf6f0, #fceae0);
       color: #222;
       padding: 2rem;
     }
 
     header {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 2rem;
+      color: #3b2f2f;
     }
 
     .post-list {
@@ -26,13 +35,15 @@
 
     .post-list a {
       display: block;
-      font-size: 1.3rem;
-      padding: 1rem;
-      margin-bottom: 0.5rem;
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.7rem;
       text-decoration: none;
       color: #333;
-      background: #fff;
-      border-radius: 6px;
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       transition: background 0.2s ease, transform 0.2s ease;
     }
@@ -45,8 +56,19 @@
     footer {
       text-align: center;
       margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
+      font-size: 1rem;
+      color: #555;
+      font-family: Georgia, serif;
+    }
+
+    footer a {
+      color: #3b2f2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -54,9 +76,23 @@
   <header>All Posts</header>
 
   <div class="post-list">
-    <a href="posts/post1.html">How I Fell in Love with Boredom</a>
-    <a href="posts/post2.html">The Empathy Trap</a>
-    <a href="posts/post3.html">Becoming Who You Need to Be</a>
+    <a href="posts/tell-me-what-to-do.html">Tell me what to do, don’t tell me what to do</a>
+    <a href="posts/fundamental-agonies.html">Fundamental Agonies of Life</a>
+    <a href="posts/too-big.html">What makes a problem feel “too big”?</a>
+    <a href="posts/rhythm-of-randomness.html">The rhythm of randomness</a>
+    <a href="posts/moving-targets.html">Moving targets</a>
+    <a href="posts/where-are-the-grownups.html">Where are the grownups?</a>
+    <a href="posts/artistic-ambition.html">Dangers and payoffs of an artistic ambition</a>
+    <a href="posts/lukewarm.html">Lukewarm is no good</a>
+    <a href="posts/absence-of-curiosity.html">An absence of curiosity, in the presence of fear</a>
+    <a href="posts/all-right-all-wrong.html">All right, all wrong</a>
+    <a href="posts/temptation-of-stillness.html">The temptation of stillness</a>
+    <a href="posts/magic-of-now.html">The magic of now</a>
+    <a href="posts/frameworks.html">Frameworks</a>
+    <a href="posts/productive-illusions.html">Productive illusions</a>
+    <a href="posts/expiry-of-amends.html">The expiry date of amends</a>
+    <a href="posts/at-least-i-know.html">At least I know (Micro-narcissism)</a>
+    <a href="posts/we-are-the-people-we-hate.html">We are the people we hate</a>
   </div>
 
   <footer>
